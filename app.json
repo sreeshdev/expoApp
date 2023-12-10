@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Parent-SchoolWithMe",
+    "slug": "schoolwithme-parentapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "sdkVersion": "48.0.0",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#03A07A"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/265a3789-5783-4457-ac79-9593d41a59ad"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "plugins": [
+      "./plugins/withProguardRules",
+      "@react-native-firebase/app",
+      "@react-native-firebase/perf",
+      "@react-native-firebase/crashlytics"
+    ],
+    "jsEngine": "hermes",
+    "ios": {
+      "jsEngine": "jsc",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.schoolwithme.parent",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification"]
+      }
+    },
+    "android": {
+      "jsEngine": "jsc",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#03A07A"
+      },
+      "package": "com.schoolwithme.parent"
+    },
+    "web": {
+      "favicon": "./src/assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "265a3789-5783-4457-ac79-9593d41a59ad"
+      }
+    },
+    "owner": "schoolwithme",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  }
+}

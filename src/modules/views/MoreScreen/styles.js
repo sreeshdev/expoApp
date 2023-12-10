@@ -1,0 +1,95 @@
+// import { generateBoxShadowStyle } from "utils/generateShadow";
+
+const { StyleSheet } = require("react-native");
+
+export const styles = StyleSheet.create({
+  mainContainer: {
+    height: "94%",
+    overflow: "scroll",
+    width: "100%",
+  },
+  welcomeContainer: {
+    height: 60,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingLeft: 30,
+    paddingRight: 30,
+  },
+  welcomeText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#ffffff",
+  },
+  gridContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    // gap: 20,
+    // paddingLeft: 30,
+    // paddingRight: 30,
+    width: "100%",
+    justifyContent: "center",
+  },
+  eachItem: {
+    width: 100,
+    height: 115.1,
+    backgroundColor: "#ffffff",
+    marginRight: 15,
+    marginBottom: 15,
+    alignItems: "center",
+    justifyContent: "space-between",
+    borderRadius: 10,
+    overflow: "hidden",
+  },
+  itemHead: {
+    margin: 5,
+    fontSize: 12,
+    fontWeight: "500",
+    color: "#2c3134",
+    textAlign: "center",
+  },
+  // eachItemShadow: generateBoxShadowStyle(
+  //   0,
+  //   2,
+  //   "#000",
+  //   0.25,
+  //   3.84,
+  //   5,
+  //   "#000000"
+  // ),
+  iconContainer: {
+    backgroundColor: "#e3fff8",
+    width: "100%",
+    height: "50%",
+    borderTopLeftRadius: 40,
+    borderTopRightRadius: 40,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  footer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    paddingLeft: 20,
+    paddingRight: 20,
+    backgroundColor: "#ffffff",
+    flex: 1,
+    height: "6%",
+  },
+  footerItem: {
+    borderColor: "#c1c1c1",
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingLeft: 8,
+    paddingRight: 8,
+    height: 28,
+    minWidth: 72,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  footText: {
+    fontSize: 10,
+    fontWeight: "500",
+    textAlign: "center",
+  },
+});

@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 3.13.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "TAMAGUI_TARGET": "native"
+      },
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "TAMAGUI_TARGET": "native"
+      },
+      "channel": "staging"
+    },
+    "production": {
+      "env": {
+        "TAMAGUI_TARGET": "native"
+      },
+      "channel": "production",
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
